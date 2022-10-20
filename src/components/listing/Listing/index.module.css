@@ -1,0 +1,11 @@
+.item-list {
+  gap: 1rem;
+  margin: 1rem 0 0;
+  padding: 50px 0;
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,139 @@
+.message-data {
+  margin-bottom: 15px;
+}
+.message-data-time {
+  color: #a8aab1;
+  padding-left: 6px;
+}
+.message {
+  color: white;
+  padding: 18px 20px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  width: 90%;
+  position: relative;
+}
+
+.message:after {
+  bottom: 100%;
+  left: 7%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #86bb71;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.my-message {
+  background: #86bb71;
+}
+.other-message {
+  background: #94c2ed;
+}
+.other-message:after {
+  border-bottom-color: #94c2ed;
+  left: 93%;
+}
+.chat-message {
+  padding: 30px;
+}
+
+.online,
+.offline,
+.me {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.online {
+  color: #86bb71;
+}
+
+.offline {
+  color: #e38968;
+}
+
+.me {
+  color: #94c2ed;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.typing_loader {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(134, 187, 113);
+  -webkit-animation: typing 1s linear infinite alternate;
+  -moz-animation: Typing 1s linear infinite alternate;
+  animation: typing 1s linear infinite alternate;
+  position: relative;
+}
+@-webkit-keyframes typing {
+  0% {
+    background-color: rgba(134, 187, 113, 1);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 0.2),
+      24px 0px 0px 0px rgba(134, 187, 113, 0.2);
+  }
+  25% {
+    background-color: rgba(134, 187, 113, 0.4);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 2),
+      24px 0px 0px 0px rgba(134, 187, 113, 0.2);
+  }
+  75% {
+    background-color: rgba(134, 187, 113, 0.4);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 0.2),
+      24px 0px 0px 0px rgba(134, 187, 113, 1);
+  }
+}
+
+@-moz-keyframes typing {
+  0% {
+    background-color: rgba(134, 187, 113, 1);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 0.2),
+      24px 0px 0px 0px rgba(134, 187, 113, 0.2);
+  }
+  25% {
+    background-color: rgba(134, 187, 113, 0.4);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 2),
+      24px 0px 0px 0px rgba(134, 187, 113, 0.2);
+  }
+  75% {
+    background-color: rgba(134, 187, 113, 0.4);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 0.2),
+      24px 0px 0px 0px rgba(134, 187, 113, 1);
+  }
+}
+
+@keyframes typing {
+  0% {
+    background-color: rgba(134, 187, 113, 1);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 0.2),
+      24px 0px 0px 0px rgba(134, 187, 113, 0.2);
+  }
+  25% {
+    background-color: rgba(134, 187, 113, 0.4);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 2),
+      24px 0px 0px 0px rgba(134, 187, 113, 0.2);
+  }
+  75% {
+    background-color: rgba(134, 187, 113, 0.4);
+    box-shadow: 12px 0px 0px 0px rgba(134, 187, 113, 0.2),
+      24px 0px 0px 0px rgba(134, 187, 113, 1);
+  }
+}
