@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './index.module.css';
 
 export default function ListItem({ item }) {
-  if (!item?.MainImage?.url_570xN) return null;
-
   return (
     <div className={styles.item}>
       <div className={styles['item-image']}>

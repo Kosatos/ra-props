@@ -6,9 +6,11 @@ import styles from './index.module.css';
 export default function Listing({ items }) {
   return (
     <div className={styles['item-list']}>
-      {items.map((item) => (
-        <ListItem item={item} key={item.listing_id} />
-      ))}
+      {items.map((item) =>
+        item?.MainImage?.url_570xN ? (
+          <ListItem item={item} key={item.listing_id} />
+        ) : null
+      )}
     </div>
   );
 }
